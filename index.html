@@ -10,13 +10,17 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://maekfei.github.io/" />
 <meta property="og:image" content="https://avatars.githubusercontent.com/u/60313724?v=4" />
-<meta name="theme-color" content="#0b0d12" />
+<meta name="theme-color" content="#f6f7fb" />
 <link rel="icon" href="https://avatars.githubusercontent.com/u/60313724?v=4" type="image/png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 <link rel="stylesheet" href="assets/style.css" />
+<script>
+  // FOUC guard — apply saved theme before paint
+  try { if (localStorage.getItem('mfl-theme') === 'dark') document.documentElement.setAttribute('data-theme','dark'); } catch(e){}
+</script>
 </head>
 <body>
 
@@ -43,7 +47,7 @@
       <a href="#education">Education</a>
     </nav>
     <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
-      <i class="fa-solid fa-moon"></i>
+      <i class="fa-solid fa-sun"></i>
     </button>
   </div>
 </header>

@@ -4,22 +4,24 @@
   var y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
 
-  // Theme toggle (persist in localStorage)
+  // Theme toggle (persist in localStorage). Default is LIGHT.
   var root = document.documentElement;
   var btn = document.getElementById('theme-toggle');
   var saved = localStorage.getItem('mfl-theme');
-  if (saved === 'light') {
-    root.setAttribute('data-theme', 'light');
+  if (saved === 'dark') {
+    root.setAttribute('data-theme', 'dark');
+    if (btn) btn.querySelector('i').className = 'fa-solid fa-moon';
+  } else {
     if (btn) btn.querySelector('i').className = 'fa-solid fa-sun';
   }
   if (btn) {
     btn.addEventListener('click', function () {
       var cur = root.getAttribute('data-theme');
-      var next = cur === 'light' ? 'dark' : 'light';
-      if (next === 'dark') root.removeAttribute('data-theme');
-      else root.setAttribute('data-theme', 'light');
+      var next = cur === 'dark' ? 'light' : 'dark';
+      if (next === 'dark') root.setAttribute('data-theme', 'dark');
+      else root.removeAttribute('data-theme');
       localStorage.setItem('mfl-theme', next);
-      btn.querySelector('i').className = next === 'light' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+      btn.querySelector('i').className = next === 'dark' ? 'fa-solid fa-moon' : 'fa-solid fa-sun';
     });
   }
 
