@@ -71,11 +71,11 @@
       </ul>
 
       <ul class="social">
+        <li><a href="https://scholar.google.com/citations?user=wI55MeMAAAAJ&hl=en" aria-label="Google Scholar" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a></li>
         <li><a href="https://github.com/Maekfei" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a></li>
-        <li><a href="https://arxiv.org/a/lu_m_5" aria-label="arXiv" title="arXiv"><i class="fa-solid fa-file-lines"></i></a></li>
-        <li><a href="https://scholar.google.com/" aria-label="Google Scholar" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a></li>
         <li><a href="mailto:Mingfei.Lu@student.uts.edu.au" aria-label="Email" title="Email"><i class="fa-solid fa-envelope"></i></a></li>
         <li><a href="https://www.uts.edu.au/" aria-label="UTS" title="UTS"><i class="fa-solid fa-building-columns"></i></a></li>
+        <li><a href="https://arxiv.org/a/lu_m_5" aria-label="arXiv" title="arXiv"><i class="fa-solid fa-file-lines"></i></a></li>
       </ul>
 
       <div class="cta">
@@ -100,27 +100,50 @@
       <p class="lead">
         I'm a PhD student at the
         <a class="ilink" href="https://www.uts.edu.au/">University of Technology Sydney</a>,
-        working on
-        <strong>Multi-Agent Systems</strong> and
-        <strong>Agent Memory</strong> for large language models. I'm broadly fascinated by the question:
+        advised by Prof. <a class="ilink" href="https://profiles.uts.edu.au/Yi.Zhang">Yi Zhang</a>.
+        My research is on <strong>Multi-Agent Systems</strong> and
+        <strong>Agent Memory</strong> for large language models — broadly,
         <em>how should agents remember, reason, and coordinate so that science and people benefit?</em>
       </p>
       <p>
         Before UTS, I graduated from <strong>China University of Political Science and Law (CUPL)</strong>.
-        Along the way I've also worked on the <em>Science of Science</em> — modeling how new
-        ideas grow into impact through citation networks, knowledge diffusion, and bias-aware learning.
-        My recent paper <a class="ilink" href="https://arxiv.org/abs/2510.19246"><em>From Newborn to Impact</em></a>
-        (<strong>The Web Conference 2026</strong>) sits exactly at that intersection.
+        That background still shows up in my work — for example,
+        <a class="ilink" href="#research">From Query to Counsel</a> (ACL 2026), a structured-reasoning
+        multi-agent framework for legal consultation. Beyond agents, I also work on the
+        <em>Science of Science</em> — modeling how new ideas grow into impact through citation
+        networks, knowledge diffusion, and bias-aware learning
+        (<a class="ilink" href="https://arxiv.org/abs/2510.19246">From Newborn to Impact</a>, WWW 2026).
       </p>
       <p class="muted">
         Always happy to chat about agent memory architectures, multi-agent vs. single-agent baselines,
-        graph-based scientific impact, and anything in between. <a class="ilink" href="mailto:Mingfei.Lu@student.uts.edu.au">Reach out →</a>
+        legal/medical agentic systems, and graph-based scientific impact.
+        <a class="ilink" href="mailto:Mingfei.Lu@student.uts.edu.au">Reach out →</a>
       </p>
+
+      <div class="stats">
+        <a class="stat" href="https://scholar.google.com/citations?user=wI55MeMAAAAJ&hl=en">
+          <div class="stat__num">10</div>
+          <div class="stat__label">Citations</div>
+        </a>
+        <a class="stat" href="https://scholar.google.com/citations?user=wI55MeMAAAAJ&hl=en">
+          <div class="stat__num">2</div>
+          <div class="stat__label">h-index</div>
+        </a>
+        <a class="stat" href="#research">
+          <div class="stat__num">3</div>
+          <div class="stat__label">Papers</div>
+        </a>
+        <a class="stat" href="https://github.com/Maekfei">
+          <div class="stat__num">12</div>
+          <div class="stat__label">GitHub Repos</div>
+        </a>
+      </div>
 
       <div class="chips">
         <span class="chip">Multi-Agent Systems</span>
         <span class="chip">Agent Memory</span>
         <span class="chip">LLM Reasoning</span>
+        <span class="chip">Legal NLP</span>
         <span class="chip">Graph Neural Networks</span>
         <span class="chip">Science of Science</span>
         <span class="chip">Citation Dynamics</span>
@@ -134,31 +157,31 @@
 
       <ol class="news">
         <li class="news__item">
-          <div class="news__date">Oct&nbsp;2025</div>
+          <div class="news__date">2026</div>
           <div class="news__body">
-            Our paper
+            Our paper <a class="ilink" href="#research"><em>From Query to Counsel: Structured Reasoning with a Multi-Agent Framework and Dataset for Legal Consultation</em></a>
+            is accepted to <strong>ACL 2026</strong> 🎉
+          </div>
+        </li>
+        <li class="news__item">
+          <div class="news__date">2026</div>
+          <div class="news__body">
+            New preprint:
+            <a class="ilink" href="https://arxiv.org/abs/2602.14038"><em>Choosing How to Remember: Adaptive Memory Structures for LLM Agents</em></a>
+            — a framework (FluxMem) that lets agents pick the right memory structure per context. +9.18% / +6.14% on PERSONAMEM / LoCoMo.
+          </div>
+        </li>
+        <li class="news__item">
+          <div class="news__date">2025</div>
+          <div class="news__body">
             <a class="ilink" href="https://arxiv.org/abs/2510.19246"><em>From Newborn to Impact: Bias-Aware Citation Prediction</em></a>
-            is accepted to <strong>The Web Conference 2026</strong> 🎉
-          </div>
-        </li>
-        <li class="news__item">
-          <div class="news__date">2025</div>
-          <div class="news__body">
-            Started building <a class="ilink" href="https://maekfei.github.io/ai-daily-news/">AI Daily News</a>
-            — a cron-published archive of agent &amp; LLM headlines, updated automatically every morning.
-          </div>
-        </li>
-        <li class="news__item">
-          <div class="news__date">2025</div>
-          <div class="news__body">
-            Released <a class="ilink" href="https://maekfei.github.io/todo-ideas/">Flow Board</a> —
-            a Notion-style, AI-classified Idea → Todo → Done board (keyboard-first, today-focused, no backend).
+            accepted to <strong>The Web Conference 2026</strong> 🎉
           </div>
         </li>
         <li class="news__item">
           <div class="news__date">2024</div>
           <div class="news__body">
-            Joined <strong>UTS</strong> as a PhD student. Research focus: agent memory structures and multi-agent coordination.
+            Joined <strong>UTS</strong> as a PhD student under Prof. Yi Zhang. Research focus: agent memory and multi-agent reasoning.
           </div>
         </li>
         <li class="news__item news__item--muted">
@@ -177,8 +200,35 @@
 
       <article class="paper">
         <div class="paper__badge">
+          <span class="badge badge--accent">ACL 2026</span>
+          <span class="badge">first author</span>
+          <span class="badge">multi-agent</span>
+        </div>
+        <h3 class="paper__title">
+          <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wI55MeMAAAAJ&citation_for_view=wI55MeMAAAAJ:d1gkVwhDpl0C">From Query to Counsel: Structured Reasoning with a Multi-Agent Framework and Dataset for Legal Consultation</a>
+        </h3>
+        <p class="paper__authors">
+          <strong>Mingfei Lu</strong>, Yi Zhang, Mengjia Wu, Yunhe Feng.
+        </p>
+        <p class="paper__venue">
+          <em>Annual Meeting of the Association for Computational Linguistics (ACL), 2026.</em>
+        </p>
+        <p class="paper__abstract">
+          A structured-reasoning multi-agent framework — and accompanying dataset — for real-world legal
+          consultation. We decompose the lawyer's reasoning into specialist agents (issue spotting,
+          authority retrieval, drafting, review) and show that explicit structure beats monolithic
+          single-agent prompting on both faithfulness and helpfulness.
+        </p>
+        <div class="paper__links">
+          <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wI55MeMAAAAJ&citation_for_view=wI55MeMAAAAJ:d1gkVwhDpl0C"><i class="fa-solid fa-up-right-from-square"></i> Scholar</a>
+        </div>
+      </article>
+
+      <article class="paper">
+        <div class="paper__badge">
           <span class="badge badge--accent">WWW 2026</span>
           <span class="badge">first author</span>
+          <span class="badge">SciSci</span>
         </div>
         <h3 class="paper__title">
           <a href="https://arxiv.org/abs/2510.19246">From Newborn to Impact: Bias-Aware Citation Prediction</a>
@@ -188,7 +238,7 @@
           Ying Ding, Yizhou Sun, Jie Lu, Yi Zhang.
         </p>
         <p class="paper__venue">
-          <em>Proceedings of The Web Conference (WWW), 2026.</em>
+          <em>Proceedings of The ACM Web Conference (WWW), 2026, pp. 7600–7609.</em>
         </p>
         <p class="paper__abstract">
           Citation prediction is critical for newborn papers, where early assessment must be performed
@@ -205,25 +255,35 @@
 
       <article class="paper">
         <div class="paper__badge">
-          <span class="badge">working paper</span>
+          <span class="badge">preprint 2026</span>
+          <span class="badge">first author</span>
+          <span class="badge">agent memory</span>
         </div>
         <h3 class="paper__title">
-          <a href="https://github.com/Maekfei/FluxMem">Choosing How to Remember: Adaptive Memory Structures for LLM Agents</a>
+          <a href="https://arxiv.org/abs/2602.14038">Choosing How to Remember: Adaptive Memory Structures for LLM Agents</a>
         </h3>
-        <p class="paper__authors"><strong>Mingfei Lu</strong>, et al.</p>
-        <p class="paper__venue"><em>In progress.</em></p>
+        <p class="paper__authors">
+          <strong>Mingfei Lu</strong>, Mengjia Wu, Feng Liu, Jiawei Xu, Weikai Li, Hao Wang,
+          Zhen Hu, Ying Ding, Yizhou Sun, Jie Lu, et al.
+        </p>
+        <p class="paper__venue"><em>arXiv preprint arXiv:2602.14038, 2026.</em></p>
         <p class="paper__abstract">
-          A study of how LLM agents should <em>structure</em> their memory — when episodic logs help,
-          when summaries hurt, and when graphs win. Code in <a class="ilink" href="https://github.com/Maekfei/FluxMem">FluxMem</a>.
+          Existing agent memory systems use a one-size-fits-all structure and don't treat structure
+          selection as a context-adaptive decision. We propose <strong>FluxMem</strong>, which equips
+          agents with multiple complementary memory structures and learns to pick among them per
+          interaction, with a three-level hierarchy and a Beta-Mixture-Model probabilistic gate
+          replacing brittle similarity thresholds. <strong>+9.18% on PERSONAMEM, +6.14% on LoCoMo.</strong>
         </p>
         <div class="paper__links">
+          <a href="https://arxiv.org/abs/2602.14038"><i class="fa-solid fa-file-pdf"></i> arXiv</a>
           <a href="https://github.com/Maekfei/FluxMem"><i class="fa-brands fa-github"></i> Code</a>
+          <a href="#" data-bibtex="fluxmem-2026"><i class="fa-solid fa-quote-right"></i> BibTeX</a>
         </div>
       </article>
 
       <p class="muted small">
-        For a full list, see my <a class="ilink" href="https://github.com/Maekfei">GitHub</a>
-        / <a class="ilink" href="https://scholar.google.com/">Google Scholar</a>.
+        For the live citation count, see my
+        <a class="ilink" href="https://scholar.google.com/citations?user=wI55MeMAAAAJ&hl=en">Google Scholar</a>.
       </p>
     </section>
 

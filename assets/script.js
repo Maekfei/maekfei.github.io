@@ -52,8 +52,16 @@
       '@inproceedings{lu2026newborn,\n' +
       '  title     = {From Newborn to Impact: Bias-Aware Citation Prediction},\n' +
       '  author    = {Lu, Mingfei and Wu, Mengjia and Xu, Jiawei and Li, Weikai and Liu, Feng and Ding, Ying and Sun, Yizhou and Lu, Jie and Zhang, Yi},\n' +
-      '  booktitle = {Proceedings of The Web Conference (WWW)},\n' +
+      '  booktitle = {Proceedings of the ACM Web Conference (WWW)},\n' +
+      '  pages     = {7600--7609},\n' +
       '  year      = {2026}\n' +
+      '}',
+    'fluxmem-2026':
+      '@article{lu2026fluxmem,\n' +
+      '  title   = {Choosing How to Remember: Adaptive Memory Structures for LLM Agents},\n' +
+      '  author  = {Lu, Mingfei and Wu, Mengjia and Liu, Feng and Xu, Jiawei and Li, Weikai and Wang, Hao and Hu, Zhen and Ding, Ying and Sun, Yizhou and Lu, Jie and others},\n' +
+      '  journal = {arXiv preprint arXiv:2602.14038},\n' +
+      '  year    = {2026}\n' +
       '}'
   };
   document.querySelectorAll('a[data-bibtex]').forEach(function (a) {
