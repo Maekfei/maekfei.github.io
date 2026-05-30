@@ -45,6 +45,8 @@
       <a href="#research">Research</a>
       <a href="#projects">Projects</a>
       <a href="#education">Education</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#service">Service</a>
     </nav>
     <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
       <i class="fa-solid fa-sun"></i>
@@ -180,16 +182,18 @@
           <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wI55MeMAAAAJ&citation_for_view=wI55MeMAAAAJ:d1gkVwhDpl0C">From Query to Counsel: Structured Reasoning with a Multi-Agent Framework and Dataset for Legal Consultation</a>
         </h3>
         <p class="paper__authors">
-          <strong>Mingfei Lu</strong>, Yi Zhang, Mengjia Wu, Yunhe Feng.
+          <strong>Mingfei Lu</strong>, Yi Zhang, Mengjia Wu, Yue Feng.
         </p>
         <p class="paper__venue">
-          <em>Annual Meeting of the Association for Computational Linguistics (ACL), 2026.</em>
+          <em>Annual Meeting of the Association for Computational Linguistics (ACL Main), 2026.</em>
+          <span class="badge" style="vertical-align: middle; margin-left: 6px;">CCF-A</span>
         </p>
         <p class="paper__abstract">
-          A structured-reasoning multi-agent framework — and accompanying dataset — for real-world legal
-          consultation. We decompose the lawyer's reasoning into specialist agents (issue spotting,
-          authority retrieval, drafting, review) and show that explicit structure beats monolithic
-          single-agent prompting on both faithfulness and helpfulness.
+          We construct <strong>JurisCQAD</strong>, a large-scale, expert-verified dataset of
+          43,000 real-world Chinese legal consultation entries, and propose <strong>JurisMA</strong>,
+          a modular multi-agent framework based on legal element graphs that supports dynamic
+          routing, statute alignment, and style optimization. JurisMA significantly outperforms
+          both general-purpose and legal-domain LLM baselines on LawBench.
         </p>
         <div class="paper__links">
           <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wI55MeMAAAAJ&citation_for_view=wI55MeMAAAAJ:d1gkVwhDpl0C"><i class="fa-solid fa-up-right-from-square"></i> Scholar</a>
@@ -210,13 +214,15 @@
           Ying Ding, Yizhou Sun, Jie Lu, Yi Zhang.
         </p>
         <p class="paper__venue">
-          <em>Proceedings of The ACM Web Conference (WWW), 2026, pp. 7600–7609.</em>
+          <em>Proceedings of the ACM Web Conference (WWW), 2026, pp. 7600–7609.</em>
+          <span class="badge" style="vertical-align: middle; margin-left: 6px;">CCF-A</span>
         </p>
         <p class="paper__abstract">
-          Citation prediction is critical for newborn papers, where early assessment must be performed
-          without citation signals and under highly long-tailed distributions. We model implicit factors
-          of scientific impact and introduce bias-aware learning to deliver stable predictions on lowly
-          cited papers — moving from coarse proxies to a more faithful signal of impact-in-the-making.
+          A bias-aware citation prediction framework addressing the challenge of forecasting impact
+          for newly published papers under <em>sparse early citation signals</em> and
+          <em>long-tail distributions</em>. By combining multi-agent feature extraction with robust
+          graph representation learning, the model reduces <strong>MALE / RMSLE by ~13%</strong>
+          and improves <strong>NDCG by 5.5%</strong>.
         </p>
         <div class="paper__links">
           <a href="https://arxiv.org/abs/2510.19246"><i class="fa-solid fa-file-pdf"></i> arXiv</a>
@@ -227,7 +233,7 @@
 
       <article class="paper">
         <div class="paper__badge">
-          <span class="badge">preprint 2026</span>
+          <span class="badge badge--accent">Under review</span>
           <span class="badge">first author</span>
           <span class="badge">agent memory</span>
         </div>
@@ -311,13 +317,45 @@
 
       <ul class="timeline">
         <li>
-          <div class="timeline__when">2025 — present</div>
+          <div class="timeline__when">Jan 2025 — present</div>
           <div class="timeline__what">
-            <strong>Ph.D. student</strong>, University of Technology Sydney<br />
-            <span class="muted">Advisor: Prof. Yi Zhang · Research: Multi-Agent Systems &amp; Agent Memory</span>
+            <strong>Ph.D. in Artificial Intelligence</strong>,
+            University of Technology Sydney<br />
+            <span class="muted">Australian Artificial Intelligence Institute (AAII) · Advisor: Prof. Yi Zhang</span>
           </div>
         </li>
       </ul>
+    </section>
+
+    <!-- TEACHING -->
+    <section id="teaching" class="section">
+      <span class="section-eyebrow">06 — Teaching</span>
+      <h2 class="section-title">👩‍🏫 Teaching</h2>
+
+      <ul class="timeline">
+        <li>
+          <div class="timeline__when">Feb 2025 — present</div>
+          <div class="timeline__what">
+            <strong>Academic Tutor</strong> · Computer Science Studio 1 (41078)<br />
+            <span class="muted">Faculty of Engineering and Information Technology, University of Technology Sydney</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- SERVICE -->
+    <section id="service" class="section">
+      <span class="section-eyebrow">07 — Service</span>
+      <h2 class="section-title">🤝 Academic Service</h2>
+
+      <p class="muted" style="margin-bottom: 14px;">Reviewer for:</p>
+      <div class="chips">
+        <span class="chip">WWW 2026</span>
+        <span class="chip">AAAI 2025</span>
+        <span class="chip">NeurIPS 2025</span>
+        <span class="chip">Scientometrics</span>
+        <span class="chip">Knowledge-Based Systems</span>
+      </div>
     </section>
 
     <!-- FOOTER -->
