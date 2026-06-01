@@ -83,6 +83,34 @@
     });
   });
 
+  // Get-in-touch: copy email + show feedback (still allows mailto: as fallback on long-press / right-click)
+  var gitBtn = document.getElementById('getInTouchBtn');
+  if (gitBtn) {
+    gitBtn.addEventListener('click', function (e) {
+      var email = gitBtn.getAttribute('data-email');
+      if (!email || !navigator.clipboard) return; // let mailto: fire normally
+      e.preventDefault();
+      navigator.clipboard.writeText(email).then(
+        function () {
+          var label = gitBtn.querySelector('.btn-label');
+          var icon = gitBtn.querySelector('i');
+          var origLabel = label.textContent;
+          var origIcon = icon.className;
+          label.textContent = 'Email copied!';
+          icon.className = 'fa-solid fa-check';
+          setTimeout(function () {
+            label.textContent = origLabel;
+            icon.className = origIcon;
+          }, 1800);
+        },
+        function () {
+          // Fallback: open mail client
+          window.location.href = 'mailto:' + email;
+        }
+      );
+    });
+  }
+
   // Reveal-on-scroll (subtle)
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
