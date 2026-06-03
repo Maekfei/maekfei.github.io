@@ -179,7 +179,7 @@ html[data-theme="dark"] .topnav {
 }
 
 .portrait-wrap {
-  position: relative; width: 100%;
+  position: relative; width: 65%;
   margin: 0 auto 20px;
   border-radius: var(--radius-lg);
   overflow: hidden;
