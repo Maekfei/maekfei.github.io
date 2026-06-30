@@ -572,3 +572,27 @@ html[data-theme="dark"] .topnav {
   }
   html { scroll-behavior: auto; }
 }
+
+/* ===== Visitor globe ===== */
+.visitor-globe {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+.visitor-globe .globe-canvas {
+  width: 100%;
+  max-width: 230px;
+  margin: 0 auto;
+  aspect-ratio: 1 / 1;
+  min-height: 180px;
+}
+.visitor-globe .globe-canvas canvas { display: block; }
+.visitor-globe .globe-label {
+  margin-top: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  letter-spacing: 0.2px;
+}
+.visitor-globe .globe-label i { color: var(--accent); margin-right: 2px; }
