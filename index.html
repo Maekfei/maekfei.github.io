@@ -351,13 +351,13 @@
 
     var accent = getComputedStyle(document.documentElement).getPropertyValue('--accent') || '#7aa2ff';
     var globe = Globe()(el)
-      .globeImageUrl('//unpkg.com/three-globe/example/img/earth-dark.jpg')
+      .globeImageUrl('//unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
       .backgroundColor('rgba(0,0,0,0)')
       .atmosphereColor(accent.trim() || '#7aa2ff')
       .atmosphereAltitude(0.18)
       .polygonCapColor(function(){ return 'rgba(0,0,0,0)'; })
       .polygonSideColor(function(){ return 'rgba(0,0,0,0)'; })
-      .polygonStrokeColor(function(){ return 'rgba(150,180,235,0.55)'; })
+      .polygonStrokeColor(function(){ return 'rgba(255,255,255,0.45)'; })
       .polygonAltitude(0.006)
       .pointsData([])
       .pointLat('lat').pointLng('lon')
