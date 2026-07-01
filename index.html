@@ -357,9 +357,16 @@
       .atmosphereAltitude(0.18)
       .pointsData([])
       .pointLat('lat').pointLng('lon')
-      .pointColor(function(){ return '#ffb35c'; })
-      .pointAltitude(function(d){ return 0.01 + Math.min(0.25, (d.count||1)*0.015); })
-      .pointRadius(0.6);
+      .pointColor(function(){ return '#ff3b4e'; })
+      .pointAltitude(function(d){ return 0.01 + Math.min(0.28, (d.count||1)*0.02); })
+      .pointRadius(0.75)
+      .pointLabel(function(d){
+        var place = [d.city, d.country].filter(Boolean).join(', ') || 'Unknown';
+        var n = d.count || 1;
+        return '<div style="background:rgba(20,24,34,.92);color:#fff;padding:5px 9px;border-radius:8px;'
+             + 'font:500 12px/1.3 Inter,sans-serif;box-shadow:0 4px 14px rgba(0,0,0,.35)">'
+             + place + ' &middot; ' + n + (n>1?' visits':' visit') + '</div>';
+      });
     function size(){ var w = el.clientWidth || 220; globe.width(w).height(w); }
     size();
     var ctr = globe.controls();
