@@ -391,20 +391,33 @@
       .then(function(geo){ globe.polygonsData(geo.features || []); })
       .catch(function(){});
 
+    var lastPlaces = 0, lastTotal = 0;
+    function retry(fn, tries){
+      return fn().catch(function(e){
+        if(tries > 0) return new Promise(function(res){ setTimeout(res, 1200); }).then(function(){ return retry(fn, tries-1); });
+        throw e;
+      });
+    }
     function loadPoints(){
-      return db.collection('visitor_map').get().then(function(snap){
+      return retry(function(){ return db.collection('visitor_map').get(); }, 3).then(function(snap){
         var pts = [];
         snap.forEach(function(d){ var x=d.data(); if(typeof x.lat==='number') pts.push(x); });
         globe.pointsData(pts);
-        document.getElementById('visitorPlaces').textContent = pts.length;
+        // only update the label when we actually got data (don't regress to 0 on a hiccup)
+        if(pts.length || lastPlaces===0){ document.getElementById('visitorPlaces').textContent = pts.length; lastPlaces = pts.length; }
         return pts;
-      }).catch(function(){ return []; });
+      }).catch(function(){
+        if(lastPlaces===0) document.getElementById('visitorPlaces').textContent = '—';
+        return [];
+      });
     }
     function loadTotal(){
-      return db.collection('visitor_stats').doc('total').get().then(function(t){
+      return retry(function(){ return db.collection('visitor_stats').doc('total').get(); }, 3).then(function(t){
         var n = (t.exists && t.data().count) || 0;
-        document.getElementById('visitorCount').textContent = Number(n).toLocaleString();
-      }).catch(function(){});
+        if(n || lastTotal===0){ document.getElementById('visitorCount').textContent = Number(n).toLocaleString(); lastTotal = n; }
+      }).catch(function(){
+        if(lastTotal===0) document.getElementById('visitorCount').textContent = '—';
+      });
     }
 
     function record(){
