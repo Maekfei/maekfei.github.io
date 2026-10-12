@@ -48,6 +48,23 @@
 
   // BibTeX clipboard
   var BIBTEX = {
+    'pairpref-2026':
+      '@article{lu2026pairpref,\n' +
+      '  title   = {PairPref: When Should Memory Guide the Answer? A Benchmark for Contextual Preference Use},\n' +
+      '  author  = {Lu, Mingfei and Wu, Mengjia and Zhang, Yi},\n' +
+      '  journal = {arXiv preprint arXiv:2609.34526},\n' +
+      '  year    = {2026},\n' +
+      '  url     = {https://arxiv.org/abs/2609.34526}\n' +
+      '}',
+    'memdream-2026':
+      '@article{lu2026memdream,\n' +
+      '  title   = {Remember Before You\'re Asked: MemDream for Self-Probing Memory Evolution},\n' +
+      '  author  = {Lu, Mingfei and Wu, Mengjia and Jia, Runsong and Luo, Zhe and Zhang, Yi},\n' +
+      '  journal = {arXiv preprint arXiv:2609.34545},\n' +
+      '  year    = {2026},\n' +
+      '  url     = {https://arxiv.org/abs/2609.34545}\n' +
+      '}',
+
     'newborn-impact-2026':
       '@inproceedings{lu2026newborn,\n' +
       '  title     = {From Newborn to Impact: Bias-Aware Citation Prediction},\n' +

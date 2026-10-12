@@ -136,6 +136,42 @@
 
       <ol class="news">
         <li class="news__item">
+          <div class="news__date" aria-hidden="true"></div>
+          <div class="news__body">
+            Joined <strong>Tencent Hunyuan</strong>'s <strong>Foundation Model Department</strong> as a <strong>Qingyun Intern</strong>.
+          </div>
+        </li>
+        <li class="news__item">
+          <div class="news__date">Sep 2026</div>
+          <div class="news__body">
+            New preprint:
+            <a class="ilink" href="https://arxiv.org/abs/2609.34526"><em>PairPref: When Should Memory Guide the Answer? A Benchmark for Contextual Preference Use</em></a>
+            — evaluating when assistants should apply or set aside remembered preferences.
+          </div>
+        </li>
+        <li class="news__item">
+          <div class="news__date">Sep 2026</div>
+          <div class="news__body">
+            New preprint:
+            <a class="ilink" href="https://arxiv.org/abs/2609.34545"><em>Remember Before You're Asked: MemDream for Self-Probing Memory Evolution</em></a>
+            — agents proactively probe and repair their memory before retrieval failures occur.
+          </div>
+        </li>
+        <li class="news__item">
+          <div class="news__date">Aug 2026</div>
+          <div class="news__body">
+            <a class="ilink" href="https://arxiv.org/abs/2608.15962"><em>SEER: Long-Context Reasoning via Selective Visual-Text Compression</em></a>
+            (<strong>COLM 2026</strong>) — combining visual compression with selective text retrieval for efficient long-context reasoning.
+          </div>
+        </li>
+        <li class="news__item">
+          <div class="news__date" aria-hidden="true"></div>
+          <div class="news__body">
+            Joined <strong>MemTensor</strong>'s <strong>Foundation Model Group</strong> as an intern.
+          </div>
+        </li>
+
+        <li class="news__item">
           <div class="news__date">2026</div>
           <div class="news__body">
             New preprint:
@@ -178,6 +214,59 @@
     <section id="research" class="section">
       <span class="section-eyebrow">03 — Research</span>
       <h2 class="section-title">📝 Selected Publications</h2>
+
+      <article class="paper">
+        <div class="paper__badge">
+          <span class="badge badge--accent">Preprint 2026</span>
+          <span class="badge">first author</span>
+          <span class="badge">agent memory</span>
+        </div>
+        <h3 class="paper__title">
+          <a href="https://arxiv.org/abs/2609.34526">PairPref: When Should Memory Guide the Answer? A Benchmark for Contextual Preference Use</a>
+        </h3>
+        <p class="paper__authors">
+          <strong>Mingfei Lu</strong>, Mengjia Wu, Yi Zhang.
+        </p>
+        <p class="paper__venue"><em>arXiv preprint arXiv:2609.34526, 2026.</em></p>
+        <p class="paper__abstract">
+          <strong>PairPref</strong> evaluates whether assistants adapt remembered preferences to changing situations.
+          It pairs contexts in which the same preference should be applied or set aside, covering
+          <strong>1,227 pairs, 45 preferences, and eight situation categories</strong>.
+          Reply selection and free generation reveal persistent difficulty with contextual preference use.
+        </p>
+        <div class="paper__links">
+          <a href="https://arxiv.org/abs/2609.34526"><i class="fa-solid fa-file-pdf"></i> arXiv</a>
+          <a href="https://arxiv.org/pdf/2609.34526"><i class="fa-solid fa-download"></i> PDF</a>
+          <a href="#" data-bibtex="pairpref-2026"><i class="fa-solid fa-quote-right"></i> BibTeX</a>
+        </div>
+      </article>
+
+      <article class="paper">
+        <div class="paper__badge">
+          <span class="badge badge--accent">Preprint 2026</span>
+          <span class="badge">first author</span>
+          <span class="badge">agent memory</span>
+        </div>
+        <h3 class="paper__title">
+          <a href="https://arxiv.org/abs/2609.34545">Remember Before You're Asked: MemDream for Self-Probing Memory Evolution</a>
+        </h3>
+        <p class="paper__authors">
+          <strong>Mingfei Lu</strong>, Mengjia Wu, Runsong Jia, Zhe Luo, Yi Zhang.
+        </p>
+        <p class="paper__venue"><em>arXiv preprint arXiv:2609.34545, 2026.</em></p>
+        <p class="paper__abstract">
+          <strong>MemDream</strong> proactively tests and evolves agent memory through offline dream cycles.
+          Three agents — Dreamer, Analyst, and Consolidator — probe, diagnose, and repair the memory graph.
+          A learned repair policy and reversible forgetting improve retrieval before real queries expose weaknesses,
+          with <strong>+4.5 F1 points on LoCoMo</strong> and a <strong>+9.1-point overall score on MemoryAgentBench</strong>
+          over the strongest reactive-evolution baselines.
+        </p>
+        <div class="paper__links">
+          <a href="https://arxiv.org/abs/2609.34545"><i class="fa-solid fa-file-pdf"></i> arXiv</a>
+          <a href="https://arxiv.org/pdf/2609.34545"><i class="fa-solid fa-download"></i> PDF</a>
+          <a href="#" data-bibtex="memdream-2026"><i class="fa-solid fa-quote-right"></i> BibTeX</a>
+        </div>
+      </article>
 
       <article class="paper">
         <div class="paper__badge">
