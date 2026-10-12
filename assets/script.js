@@ -48,6 +48,15 @@
 
   // BibTeX clipboard
   var BIBTEX = {
+    'memdream-2026':
+      '@article{lu2026memdream,\n' +
+      '  title   = {Remember Before You\'re Asked: MemDream for Self-Probing Memory Evolution},\n' +
+      '  author  = {Lu, Mingfei and Wu, Mengjia and Jia, Runsong and Luo, Zhe and Zhang, Yi},\n' +
+      '  journal = {arXiv preprint arXiv:2609.34545},\n' +
+      '  year    = {2026},\n' +
+      '  url     = {https://arxiv.org/abs/2609.34545}\n' +
+      '}',
+
     'newborn-impact-2026':
       '@inproceedings{lu2026newborn,\n' +
       '  title     = {From Newborn to Impact: Bias-Aware Citation Prediction},\n' +
@@ -59,7 +68,7 @@
     'fluxmem-2026':
       '@article{lu2026fluxmem,\n' +
       '  title   = {Choosing How to Remember: Adaptive Memory Structures for LLM Agents},\n' +
-      '  author  = {Lu, Mingfei and Wu, Mengjia and Liu, Feng and Xu, Jiawei and Li, Weikai and Wang, Hao and Hu, Zhen and Ding, Ying and Sun, Yizhou and Lu, Jie and others},\n' +
+      '  author  = {Lu, Mingfei and Wu, Mengjia and Liu, Feng and Xu, Jiawei and Li, Weikai and Wang, Haoyang and Hu, Zhengdong and Ding, Ying and Sun, Yizhou and Lu, Jie and Zhang, Yi},\n' +
       '  journal = {arXiv preprint arXiv:2602.14038},\n' +
       '  year    = {2026}\n' +
       '}'
